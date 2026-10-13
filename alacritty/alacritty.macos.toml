@@ -1,0 +1,4 @@
+[window]
+decorations = "buttonless"
+blur = true
+option_as_alt = "Both"

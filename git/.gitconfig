@@ -1,0 +1,12 @@
+# Portable git config. Identity lives in ~/.gitconfig.local (untracked), e.g.
+#   [user]
+#     name = Your Name
+#     email = you@example.com
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[include]
+	path = ~/.gitconfig.local
