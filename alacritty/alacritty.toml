@@ -1,6 +1,10 @@
+# Shared Alacritty config. OS-specific settings live in os.toml, which the
+# installer symlinks to alacritty.macos.toml or alacritty.linux.toml.
+[general]
+import = ["os.toml"]
+
 [window]
-opacity = 0.96
-decorations = "buttonless"
+opacity = 0.95
 
 [window.padding]
 x = 8
@@ -13,13 +17,7 @@ italic = { family = "FiraCode Nerd Font", style = "Italic" }
 bold_italic = { family = "FiraCode Nerd Font", style = "Bold Italic" }
 size = 14.0
 
-# draw_bold_text_with_bright_colors = true
-
-# [[key_bindings]]
-# key = "N"
-# mods = "Command"
-# action = "SpawnNewInstance"
-
-# [terminal.shell]
-# program = "/bin/zsh"
-# args = ["-l"]
+# Login shell; uses $SHELL so it works on macOS and Linux.
+[terminal.shell]
+program = "zsh"
+args = ["-l"]
