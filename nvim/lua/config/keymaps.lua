@@ -3,3 +3,6 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+vim.keymap.set("n", "<leader>mz", function()
+  Snacks.zen()
+end, { desc = "Markdown zen" })
